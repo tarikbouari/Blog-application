@@ -1,5 +1,5 @@
 class CreateLikes < ActiveRecord::Migration[7.0]
-  def change
+  def changes
     create_table :likes do |t|
       
       t.timestamps

@@ -34,9 +34,6 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Blog App <a name="about-project"></a>
-![blog-gif](https://ansarshome.files.wordpress.com/2021/09/d3464a4351fdf340ccb6bb37c281381a.gif)
-
 **Blog Application** 
 It's a web application that allows user to register and make posts.
 A post can be commented , Liked, and share. Build with Ruby on Rails, Postegresql
