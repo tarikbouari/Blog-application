@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  belongs_to :user
+  belongs_to :author, class_name: 'User'
   has_many :likes
   has_many :comments
 
@@ -8,10 +8,10 @@ class Post < ApplicationRecord
   private
 
   def update_post_counter
-    posts.increment!(:posts_counter)
+    author.increment!(:posts_counter)
   end
 
   def rencent_comments
-    comments.order(created_at: :desc).limit(5)
+    post.order(created_at: :desc).limit(5)
   end
 end
