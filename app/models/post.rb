@@ -1,9 +1,9 @@
 class Post < ApplicationRecord
   after_save :update_post_counter
-  
+
   validates :title, presence: true, length: { in: 1..250 }
-  validates :comments_counter, :likes_counter, comparaison: { greater_than_or_equal_to: 0 }, 
-                               numericality: { only_integer: true }
+  validates :comments_counter, :likes_counter, comparison: { greater_than_or_equal_to: 0 },
+                                               numericality: { only_integer: true }
 
   belongs_to :author, class_name: 'User'
   has_many :likes
