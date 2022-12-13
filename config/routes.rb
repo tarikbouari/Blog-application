@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   # Display all the list of users
   get 'users/', to: 'users#index' 
 
+  #display a specific user
+  get 'users/:id', to: 'users#show'
+
 end
