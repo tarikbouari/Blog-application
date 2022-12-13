@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   #display all the post for a specific user
   get 'users/:user_id/posts', to: 'posts#index
 
+  #display a user specific post 
+  get 'users/:user_id/posts/:id', to: 'posts#show'
+
 end
