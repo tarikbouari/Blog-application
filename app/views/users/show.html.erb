@@ -1,1 +1,9 @@
-<h1>User profile<h1>
+<section>
+<div id="ctn-name">
+   <%= render "user", user: @user %>
+</div>
+<div id="ctn-name">
+  <h3> Bio</h3>
+  <p><%= @user.bio%>
+</div>
+</section>
