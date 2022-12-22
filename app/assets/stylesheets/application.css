@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.user-container {
+    margin: 0 auto;
+    padding: 3rem;
+    width: 100%;
+}
+
+.users{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #cecece;
+    margin: 1rem 0;
+}
+
+.user-profile {
+    width: 20%;
+    background-color: bisque;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.container-username {
+    width: 80%;
+    padding: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(217, 88, 234);
+}
